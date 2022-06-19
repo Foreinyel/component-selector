@@ -1,1 +1,1 @@
-# {{ packageName }}
+# component-selector

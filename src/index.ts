@@ -1,7 +1,7 @@
-import {{ componentName }} from "./Component";
+import ComponentSelector from "./Component";
 
 export {
-    {{ componentName }}
+    ComponentSelector
 };
 
-export default {{ componentName }};
+export default ComponentSelector;
