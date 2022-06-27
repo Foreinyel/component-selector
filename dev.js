@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 const config = require("./webpack.config");
 
-const compiler = webpack(config("production"));
+const compiler = webpack(config("development"));
 
 if (compiler) {
   const devServerOptions = Object.assign(

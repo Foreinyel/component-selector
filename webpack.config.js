@@ -18,6 +18,7 @@ module.exports = function (mode) {
         ? `${parseResourceName(pkg.name)}.js`
         : `${parseResourceName(pkg.name)}.dev.js`,
       libraryTarget: "system",
+      publicPath: "",
     },
     module: {
       rules: [
@@ -60,6 +61,10 @@ module.exports = function (mode) {
     devtool: prod ? false : "source-map",
     externals: {
       react: "React",
+      "react-dom": "ReactDOM",
+    },
+    optimization: {
+      usedExports: true,
     },
   };
 };
